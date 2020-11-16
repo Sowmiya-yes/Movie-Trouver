@@ -1,4 +1,7 @@
 # movie-trouver
+
+App Link - https://movie-trouver.netlify.app/
+
 A movie finder application built with React, React Router and TMDb API for movies data.
 The application is responsive across all devices ranging from mobile to desktops.
 Currently, uses local storage for saving the user favorites.
