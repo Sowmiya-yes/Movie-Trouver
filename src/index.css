@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  background-color: #1c1f22;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.intend-5rem-left {
+  position: relative;
+  width: calc(100% - 5rem);
+  left: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .intend-5rem-left {
+    width: 100%;
+    left: 0;
+  }
+}

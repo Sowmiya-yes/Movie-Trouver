@@ -1,0 +1,19 @@
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 5rem;
+  width: calc(100% - 5rem);
+  height: 100%;
+  z-index: 999;
+  background-image: linear-gradient( to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.8)
+    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yt-video {
+  border: 0;
+}

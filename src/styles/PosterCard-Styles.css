@@ -1,0 +1,204 @@
+.poster-card {
+  height: 650px;
+  background-image: 
+      linear-gradient( to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(https://image.tmdb.org/t/p/original/naXUDz0VGK7aaPlEpsuYW8kNVsr.jpg);
+    display: flex;
+    padding: 5rem;
+}
+
+.poster-box {
+  width: 30%;
+  margin-right: 5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-box > img {
+  height: 400px;
+  width: 300px;
+  border-radius: 1.5rem;
+}
+
+.movie-full-details {
+  width: 70%;
+  color: #EEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-full-details h1 {
+  font-size: 3rem;
+}
+
+.movie-full-details p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #CCC;
+}
+
+table {
+  margin: 1rem 0;
+  font-size: 1rem;
+  display: inline;
+}
+
+td {
+  padding: 0 1rem 0.5rem 0;
+}
+
+.genre > span {
+  color: #999;
+  border-right: 1px solid #999;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+span:first-of-type {
+  padding-left: 0;
+}
+
+.fa-star {
+  color: #3298DA;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #FFF;
+  border: 1px solid #999;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn .fas {
+  margin-right: 0.5rem;
+}
+
+.fa-play {
+  color: #3298DA;
+}
+
+.fav-btn > .fa-heart {
+  color: red;
+}
+
+@media screen and (min-width: 701px) and (max-width: 950px) {
+  .poster-card {
+    padding: 2rem;
+    height: 550px;
+  }
+
+  .poster-box {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  .poster-box > img {
+    height: 350px;
+    width: 250px;
+  }
+
+  .genre > span, table {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .movie-full-details h1 {
+    font-size: 2rem;
+  }
+
+  .movie-full-details p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    margin-right: 0.75rem;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+  .poster-card {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .poster-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .poster-box {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .poster-box > img {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie-full-details {
+    width: 100%;
+    align-items: center;
+  }
+
+  .movie-full-details p {
+    text-align: center;
+  }
+
+  .genre > span, table {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .poster-card {
+    padding: 0rem;
+  }
+
+  .poster-box > img {
+    height: 350px;
+    width: 250px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie-full-details {
+    padding: 1rem;
+  }
+  
+  .btn {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+

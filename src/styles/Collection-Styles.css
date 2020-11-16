@@ -1,0 +1,73 @@
+.collectionsContainer {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.genericCollectionsInfo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.genericCollectionsInfo h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.genericCollectionsInfo a {
+    color:  #3298DA;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.genericCollectionsInfo a:hover {
+    border-bottom: 1.5px solid #3298DA;
+}
+
+.collections {
+    display: flex;
+    overflow-x: auto;
+}
+
+.collections::-webkit-scrollbar {
+    display: none;
+}
+
+.collectionItem {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.collectionItem img {
+    height: 250px;
+    width: 180px;
+}
+
+@media screen and (max-width: 500px) {
+    .collectionItem img{
+        height: 170px;
+        width: 110px;
+    }
+
+    .collectionsContainer {
+        padding: 1.5rem 1rem 0 1rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+    .collectionItem img{
+        height: 210px;
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+    .collectionsContainer {
+        padding-left: 2rem;
+    }
+
+    .collectionItem img{
+        height: 230px;
+        width: 160px;
+    }
+}
