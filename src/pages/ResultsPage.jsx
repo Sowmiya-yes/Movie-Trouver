@@ -16,9 +16,6 @@ const ResultsPage = () => {
     {
         MOVIE_DATA.map( movieId => {
             const movie = JSON.parse(localStorage.getItem(movieId))
-            {
-              console.log(movie)
-            }
             return (<div className="collectionItem" key={movieId}>
                 <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="poster"/>
             </div>)

@@ -6,9 +6,6 @@ import Navigation from '../component/Navigation';
 
 import './Page-Styles.css';
 
-import movieJson from '../data/data';
-import Results from '../component/Results';
-
 class Homepage extends React.Component {
   constructor() {
     super();
